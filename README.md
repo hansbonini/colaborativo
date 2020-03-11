@@ -54,7 +54,8 @@ Nós de acesso da API do servidor
     "Balls":    [83,46,90,27,53,9,32,11,43,85,50,65,36,57,8,28,3,33,34,80,58,25,38,17,44,15,47,64,72,76,87,19,21,73,23,12,39,62,75,84,1,13,18,4,35,59,37,61,79,56,74,49,14,82,30,51,7,41,20,48,86,81,24,2,77,70,52,69,71,63,10,67,54,45,40,55,89,42,88,16,31,60,68,26,6,66,78,5,22,29], // Números sorteados em ordem (90 Bolas)
     "Enabled":true, // Sorteio Ativo (sempre ativo para o cliente, inativas não retornam na consulta)
     "Finished":false // Sorteio Finalizado
-  }
+  },
+  ...
 ]}
 ```
 
@@ -82,7 +83,8 @@ Nós de acesso da API do servidor
     "Balls":    [83,46,90,27,53,9,32,11,43,85,50,65,36,57,8,28,3,33,34,80,58,25,38,17,44,15,47,64,72,76,87,19,21,73,23,12,39,62,75,84,1,13,18,4,35,59,37,61,79,56,74,49,14,82,30,51,7,41,20,48,86,81,24,2,77,70,52,69,71,63,10,67,54,45,40,55,89,42,88,16,31,60,68,26,6,66,78,5,22,29], // Números sorteados em ordem (90 Bolas)
     "Enabled":true, // Sorteio Ativo (sempre ativo para o cliente, inativas não retornam na consulta)
     "Finished":true // Sorteio Finalizado
-  }
+  },
+  ...
 ]}
 ```
 ## Ganhadores
@@ -109,7 +111,7 @@ Nós de acesso da API do servidor
         "Prize3":89, // Bola em que saiu o prêmio Bingo da Cartela
         "Active":true, // Cartela Ativa
         "Processed":true, // Cartela Processada
-       }]
+       }, ...]
     },
     "Prize2":{ // Prêmio da Linha
       "Ball":53, // Bola em que saiu o prêmio
@@ -126,7 +128,7 @@ Nós de acesso da API do servidor
         "Prize3":89, // Bola em que saiu o prêmio Bingo da Cartela
         "Active":true, // Cartela Ativa
         "Processed":true, // Cartela Processada
-       }]
+       }, ...]
      },
      "Prize3": { // Prêmio do Bingo
         "Ball":83, // Bola em que saiu o prêmio
@@ -143,9 +145,9 @@ Nós de acesso da API do servidor
           "Prize3":83, // Bola em que saiu o prêmio Bingo da Cartela
           "Active":true, // Cartela Ativa
           "Processed":true // Cartela Processada
-        }]
+        }, ...]
       },
-      "Sellers":{"5e5d6366bddda10017e299ec":"Bar do Gordo"} // Nome dos Vendedores das cartelas vencedoras por Chave
+      "Sellers":{"5e5d6366bddda10017e299ec":"Bar do Gordo", ...} // Nome dos Vendedores das cartelas vencedoras por Chave
   },
   "status":200 // Status da Resposta
  }
@@ -177,7 +179,7 @@ Nós de acesso da API do servidor
     },
     ...
   ],
-  "sellers": {"5e5d6366bddda10017e299ec":"Bar do Gordo"}, // Chave e Nome dos Vendedores no Rank
+  "sellers": {"5e5d6366bddda10017e299ec":"Bar do Gordo", ...}, // Chave e Nome dos Vendedores no Rank
   "count":3 // Contador de Cartelas no Rank
 }
 ```
