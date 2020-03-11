@@ -7,7 +7,7 @@ URL:
 Resposta:
 ```javascript
 {
-  "status":200,
+  "status":200, // Resposta válida de status 200
   "games":    [
     {
     "createdAt":1583690791524, // Data de Criação do Sorteio
