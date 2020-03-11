@@ -150,3 +150,37 @@ Nós de acesso da API do servidor
   "status":200 // Status da Resposta
  }
 ```
+
+## Ranking
+### Listar ranking das cartelas sorteio por bola
+- URL:
+```/ranking/{chave do sorteio}/{ bola sorteada }```
+- Tipo: ```GET```
+- Resposta:
+```javascript
+{
+  "status":200,
+  "rank":[
+    {
+      "createdAt":1583792890286,// Data de criação do Rank (nao utilizado)
+      "updatedAt":1583793844461,// Data de atualização do Rank (nao utilizado)
+      "id":"5e66c2faf2e0990004fdf2b1", // Chave do Rank
+      "sequence":0, // Sequencia do Rank (nao utilizado)
+      "GameID":"5e66c2f5f2e0990004fdeade", // Chave do Sorteio que o Rank pertence
+      "CardID":"5e66c2f6f2e0990004fdeae1", // Chave da Cartela que o Rank pertence
+      "CardActive":true, // Cartela que o Rank pertence está ativa
+      "Ball":1, // Bola que pertence o rank
+      "Position":153, // Posição da Cartela (Ordenar de 1 à 10 por esta propriedade já que só exibe as 10 melhores)
+      "RemainingNumbers":[31,21,78,46,22,37,17,25,76,85,59,80,35], // Números Restantes na Cartela toda (usar para o Prize3)
+      "RemainingBalls":[37,17,25,76], // Números restantes na melhor linha (usar para o Prize1 e Prize 2)
+      "LineSelected":"CE" // Linha selecionada (melhor linha) (usar para o Prize1 e Prize2)
+    },
+    ...
+  ],
+  "sellers":    [{ // Vendedores das cartelas exibidas no Rank
+    "id":"5e5d6366bddda10017e299ec", // Chave do Vendedor
+    "Name":"Bar do Gordo" // Nome do Vendedor
+  }],
+  "count":3 // Contador de Cartelas no Rank
+}
+```
