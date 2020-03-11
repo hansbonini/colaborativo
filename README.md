@@ -177,10 +177,7 @@ Nós de acesso da API do servidor
     },
     ...
   ],
-  "sellers":    [{ // Vendedores das cartelas exibidas no Rank
-    "id":"5e5d6366bddda10017e299ec", // Chave do Vendedor
-    "Name":"Bar do Gordo" // Nome do Vendedor
-  }],
+  "sellers": {"5e5d6366bddda10017e299ec":"Bar do Gordo"}, // Chave e Nome dos Vendedores no Rank
   "count":3 // Contador de Cartelas no Rank
 }
 ```
