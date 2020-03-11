@@ -1,9 +1,12 @@
 # API
 Nós de acesso da API do servidor
 
-## LISTAR SORTEIO ATUAL
+## Sorteios
+
+### Sorteio Atual
 URL:
 ```/games/current```
+Tipo: ```GET```
 Resposta:
 ```javascript
 {
@@ -27,9 +30,10 @@ Resposta:
 }
 ```
 
-## LISTAR PRÓXIMOS SORTEIOS
+### Listar proximos sorteios
 URL:
 ```/games/next```
+Tipo: ```GET```
 Resposta:
 ```javascript
 {
@@ -54,7 +58,7 @@ Resposta:
 ]}
 ```
 
-## LISTAR SORTEIOS ANTERIORES
+### Listar sorteios anteriores
 URL:
 ```/games/finished```
 Resposta:
