@@ -31,10 +31,10 @@ Nós de acesso da API do servidor
 ```
 
 ### Listar proximos sorteios
-URL:
+- URL:
 ```/games/next```
-Tipo: ```GET```
-Resposta:
+- Tipo: ```GET```
+- Resposta:
 ```javascript
 {
   "status":200, // Resposta válida de status 200
@@ -59,9 +59,10 @@ Resposta:
 ```
 
 ### Listar sorteios anteriores
-URL:
+- URL:
 ```/games/finished```
-Resposta:
+- Tipo: ```GET```
+- Resposta:
 ```javascript
 {
   "status":200, // Resposta válida de status 200
