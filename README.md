@@ -4,10 +4,10 @@ Nós de acesso da API do servidor
 ## Sorteios
 
 ### Sorteio Atual
-URL:
+- URL:
 ```/games/current```
-Tipo: ```GET```
-Resposta:
+- Tipo: ```GET```
+- Resposta:
 ```javascript
 {
   "status":200, // Resposta válida de status 200
